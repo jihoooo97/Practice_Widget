@@ -16,3 +16,20 @@ struct ConfigurationAppIntent: WidgetConfigurationIntent {
     @Parameter(title: "Favorite Emoji", default: "😃")
     var favoriteEmoji: String
 }
+
+
+extension ConfigurationAppIntent {
+    
+    static var smiley: ConfigurationAppIntent {
+        let intent = ConfigurationAppIntent()
+        intent.favoriteEmoji = "😀"
+        return intent
+    }
+    
+    static var starEyes: ConfigurationAppIntent {
+        let intent = ConfigurationAppIntent()
+        intent.favoriteEmoji = "🤩"
+        return intent
+    }
+    
+}

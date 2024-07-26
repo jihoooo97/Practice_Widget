@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13583B6E2C490827001D071E /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13583B6D2C490827001D071E /* AppIntent.swift */; };
+		13583B6E2C490827001D071E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13583B6D2C490827001D071E /* Configuration.swift */; };
+		136007932C5242010072CD1A /* MyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136007912C5241D30072CD1A /* MyProvider.swift */; };
+		136007972C52422B0072CD1A /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136007952C5242280072CD1A /* SimpleEntry.swift */; };
+		1360079A2C5243110072CD1A /* SimpleEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136007982C5242FE0072CD1A /* SimpleEntryView.swift */; };
 		13DC14D82C4814CF00066874 /* Practice_WidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC14D72C4814CF00066874 /* Practice_WidgetApp.swift */; };
 		13DC14DA2C4814CF00066874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC14D92C4814CF00066874 /* ContentView.swift */; };
 		13DC14DC2C4814D100066874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DC14DB2C4814D100066874 /* Assets.xcassets */; };
@@ -47,7 +50,10 @@
 
 /* Begin PBXFileReference section */
 		13583B6C2C48FC8B001D071E /* Practice_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Practice_Widget.entitlements; sourceTree = "<group>"; };
-		13583B6D2C490827001D071E /* AppIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		13583B6D2C490827001D071E /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		136007912C5241D30072CD1A /* MyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProvider.swift; sourceTree = "<group>"; };
+		136007952C5242280072CD1A /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		136007982C5242FE0072CD1A /* SimpleEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntryView.swift; sourceTree = "<group>"; };
 		13DC14D42C4814CF00066874 /* Practice_Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice_Widget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DC14D72C4814CF00066874 /* Practice_WidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_WidgetApp.swift; sourceTree = "<group>"; };
 		13DC14D92C4814CF00066874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,7 +100,7 @@
 		1360078D2C52408D0072CD1A /* Intent */ = {
 			isa = PBXGroup;
 			children = (
-				13583B6D2C490827001D071E /* AppIntent.swift */,
+				13583B6D2C490827001D071E /* Configuration.swift */,
 			);
 			path = Intent;
 			sourceTree = "<group>";
@@ -110,9 +116,28 @@
 		1360078F2C5240AA0072CD1A /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				136007942C52421A0072CD1A /* Entry */,
+				136007902C5241AB0072CD1A /* Provider */,
 				13DC14F72C48160F00066874 /* MyWidget.swift */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		136007902C5241AB0072CD1A /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				136007912C5241D30072CD1A /* MyProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		136007942C52421A0072CD1A /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				136007952C5242280072CD1A /* SimpleEntry.swift */,
+				136007982C5242FE0072CD1A /* SimpleEntryView.swift */,
+			);
+			path = Entry;
 			sourceTree = "<group>";
 		};
 		13DC14CB2C4814CF00066874 = {
@@ -299,9 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136007972C52422B0072CD1A /* SimpleEntry.swift in Sources */,
+				1360079A2C5243110072CD1A /* SimpleEntryView.swift in Sources */,
 				13DC14F62C48160F00066874 /* MyWidgetLiveActivity.swift in Sources */,
 				13DC15052C4819D200066874 /* ContentView.swift in Sources */,
-				13583B6E2C490827001D071E /* AppIntent.swift in Sources */,
+				136007932C5242010072CD1A /* MyProvider.swift in Sources */,
+				13583B6E2C490827001D071E /* Configuration.swift in Sources */,
 				13DC14F42C48160F00066874 /* MyWidgetBundle.swift in Sources */,
 				13DC14F82C48160F00066874 /* MyWidget.swift in Sources */,
 			);
