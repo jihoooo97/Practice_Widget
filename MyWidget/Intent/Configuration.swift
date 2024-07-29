@@ -13,22 +13,16 @@ struct ConfigurationAppIntent: WidgetConfigurationIntent {
     static var description = IntentDescription("This is an example widget.")
 
     // An example configurable parameter.
-    @Parameter(title: "Favorite Emoji", default: "😃")
-    var favoriteEmoji: String
+    @Parameter(title: "Meow Fact", default: "empty")
+    var meowFact: String
 }
 
 
 extension ConfigurationAppIntent {
     
-    static var smiley: ConfigurationAppIntent {
+    static var empty: ConfigurationAppIntent {
         let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "😀"
-        return intent
-    }
-    
-    static var starEyes: ConfigurationAppIntent {
-        let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "🤩"
+        intent.meowFact = "empty"
         return intent
     }
     

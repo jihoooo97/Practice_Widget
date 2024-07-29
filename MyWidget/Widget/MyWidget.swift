@@ -26,6 +26,5 @@ struct MyWidget: Widget {
 #Preview(as: .systemSmall) {
     MyWidget()
 } timeline: {
-    SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
+    SimpleEntry(date: .now, meowFact: "Empty")
 }

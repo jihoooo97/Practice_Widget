@@ -6,18 +6,16 @@
 //
 
 import SwiftUI
-import WidgetKit
 
 struct SimpleEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
         VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+            Text(entry.meowFact)
+            
+            Text(entry.date.formatted(.dateTime))
+                .font(.caption)
         }
     }
 }

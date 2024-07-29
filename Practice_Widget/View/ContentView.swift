@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
+    @State private var placeholder = "Hello,"
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Reload") {
+                WidgetCenter.shared.reloadAllTimelines()
+            }
+            .buttonStyle(BorderedProminentButtonStyle())
         }
         .padding()
     }
