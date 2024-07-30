@@ -9,10 +9,12 @@ import SwiftUI
 import WidgetKit
 
 struct ContentView: View {
-    @State private var placeholder = "Hello,"
+    @Environment(\.deepLinkText) private var deepLinkText: String
     
     var body: some View {
         VStack {
+            Text(deepLinkText)
+            
             Button("Reload") {
                 WidgetCenter.shared.reloadAllTimelines()
             }

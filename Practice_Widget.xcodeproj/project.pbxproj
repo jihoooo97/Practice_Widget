@@ -22,7 +22,9 @@
 		13DC14F82C48160F00066874 /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC14F72C48160F00066874 /* MyWidget.swift */; };
 		13DC14FC2C48161000066874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DC14FB2C48161000066874 /* Assets.xcassets */; };
 		13DC15002C48161000066874 /* MyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 13DC14EC2C48160F00066874 /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		13DC15052C4819D200066874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC14D92C4814CF00066874 /* ContentView.swift */; };
+		13E2E1682C5885EC00B79101 /* EnvironmentValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2E1672C5885EC00B79101 /* EnvironmentValues+Extension.swift */; };
+		13E2E16A2C58868A00B79101 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2E1692C58868A00B79101 /* String+Extension.swift */; };
+		13E2E16B2C5886AF00B79101 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2E1692C58868A00B79101 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		13DC14F72C48160F00066874 /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
 		13DC14FB2C48161000066874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13DC14FD2C48161000066874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13E2E1672C5885EC00B79101 /* EnvironmentValues+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extension.swift"; sourceTree = "<group>"; };
+		13E2E1692C58868A00B79101 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +177,9 @@
 		13DC14D62C4814CF00066874 /* Practice_Widget */ = {
 			isa = PBXGroup;
 			children = (
-				13583B6C2C48FC8B001D071E /* Practice_Widget.entitlements */,
 				13DC14E52C4814F300066874 /* App */,
 				13DC14E72C48150D00066874 /* View */,
+				13E2E1662C5885CE00B79101 /* Extension */,
 				13DC14E62C4814FA00066874 /* Resources */,
 			);
 			path = Practice_Widget;
@@ -192,6 +196,7 @@
 		13DC14E62C4814FA00066874 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				13583B6C2C48FC8B001D071E /* Practice_Widget.entitlements */,
 				13DC14DB2C4814D100066874 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -224,6 +229,15 @@
 				1360078C2C52407A0072CD1A /* Resources */,
 			);
 			path = MyWidget;
+			sourceTree = "<group>";
+		};
+		13E2E1662C5885CE00B79101 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				13E2E1672C5885EC00B79101 /* EnvironmentValues+Extension.swift */,
+				13E2E1692C58868A00B79101 /* String+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E2E16A2C58868A00B79101 /* String+Extension.swift in Sources */,
+				13E2E1682C5885EC00B79101 /* EnvironmentValues+Extension.swift in Sources */,
 				13DC14DA2C4814CF00066874 /* ContentView.swift in Sources */,
 				13DC14D82C4814CF00066874 /* Practice_WidgetApp.swift in Sources */,
 			);
@@ -336,10 +352,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				132C2B272C57DBF7005DC205 /* FactModel.swift in Sources */,
+				13E2E16B2C5886AF00B79101 /* String+Extension.swift in Sources */,
 				136007972C52422B0072CD1A /* SimpleEntry.swift in Sources */,
 				1360079A2C5243110072CD1A /* SimpleEntryView.swift in Sources */,
 				13DC14F62C48160F00066874 /* MyWidgetLiveActivity.swift in Sources */,
-				13DC15052C4819D200066874 /* ContentView.swift in Sources */,
 				136007932C5242010072CD1A /* MyProvider.swift in Sources */,
 				13583B6E2C490827001D071E /* Configuration.swift in Sources */,
 				13DC14F42C48160F00066874 /* MyWidgetBundle.swift in Sources */,
@@ -483,7 +499,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Practice_Widget/Practice_Widget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Practice_Widget/Resources/Practice_Widget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -519,7 +535,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Practice_Widget/Practice_Widget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Practice_Widget/Resources/Practice_Widget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";

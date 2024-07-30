@@ -17,5 +17,7 @@ struct SimpleEntryView : View {
             Text(entry.date.formatted(.dateTime))
                 .font(.caption)
         }
+        .widgetURL(URL(string: "widget://deeplink?meowFact=\(entry.meowFact)".getPercentEncodedString))
     }
+
 }

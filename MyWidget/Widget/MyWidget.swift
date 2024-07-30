@@ -23,7 +23,7 @@ struct MyWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview(as: .systemMedium) {
     MyWidget()
 } timeline: {
     SimpleEntry(date: .now, meowFact: "Empty")
