@@ -9,9 +9,15 @@
 /* Begin PBXBuildFile section */
 		132C2B272C57DBF7005DC205 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C2B252C57DBE9005DC205 /* FactModel.swift */; };
 		13583B6E2C490827001D071E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13583B6D2C490827001D071E /* Configuration.swift */; };
-		136007932C5242010072CD1A /* MyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136007912C5241D30072CD1A /* MyProvider.swift */; };
+		136007932C5242010072CD1A /* SimpleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136007912C5241D30072CD1A /* SimpleProvider.swift */; };
 		136007972C52422B0072CD1A /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136007952C5242280072CD1A /* SimpleEntry.swift */; };
 		1360079A2C5243110072CD1A /* SimpleEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136007982C5242FE0072CD1A /* SimpleEntryView.swift */; };
+		136327D22C59C0C100C7ED2E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136327D12C59C0C100C7ED2E /* ImageCache.swift */; };
+		136327D82C59C1D300C7ED2E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136327D12C59C0C100C7ED2E /* ImageCache.swift */; };
+		136327D92C59C1DB00C7ED2E /* PhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136327D62C59C1B300C7ED2E /* PhotoEntity.swift */; };
+		136327DC2C59C2F500C7ED2E /* PhotoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136327DA2C59C2C600C7ED2E /* PhotoProvider.swift */; };
+		136327E12C59C35F00C7ED2E /* PhotoEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136327DF2C59C31B00C7ED2E /* PhotoEntryView.swift */; };
+		136327E22C59C3AC00C7ED2E /* PhotoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136327DD2C59C31000C7ED2E /* PhotoEntry.swift */; };
 		13DC14D82C4814CF00066874 /* Practice_WidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC14D72C4814CF00066874 /* Practice_WidgetApp.swift */; };
 		13DC14DA2C4814CF00066874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC14D92C4814CF00066874 /* ContentView.swift */; };
 		13DC14DC2C4814D100066874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DC14DB2C4814D100066874 /* Assets.xcassets */; };
@@ -55,9 +61,14 @@
 		132C2B252C57DBE9005DC205 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
 		13583B6C2C48FC8B001D071E /* Practice_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Practice_Widget.entitlements; sourceTree = "<group>"; };
 		13583B6D2C490827001D071E /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		136007912C5241D30072CD1A /* MyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProvider.swift; sourceTree = "<group>"; };
+		136007912C5241D30072CD1A /* SimpleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProvider.swift; sourceTree = "<group>"; };
 		136007952C5242280072CD1A /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
 		136007982C5242FE0072CD1A /* SimpleEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntryView.swift; sourceTree = "<group>"; };
+		136327D12C59C0C100C7ED2E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		136327D62C59C1B300C7ED2E /* PhotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEntity.swift; sourceTree = "<group>"; };
+		136327DA2C59C2C600C7ED2E /* PhotoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProvider.swift; sourceTree = "<group>"; };
+		136327DD2C59C31000C7ED2E /* PhotoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEntry.swift; sourceTree = "<group>"; };
+		136327DF2C59C31B00C7ED2E /* PhotoEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEntryView.swift; sourceTree = "<group>"; };
 		13DC14D42C4814CF00066874 /* Practice_Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice_Widget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DC14D72C4814CF00066874 /* Practice_WidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_WidgetApp.swift; sourceTree = "<group>"; };
 		13DC14D92C4814CF00066874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				132C2B252C57DBE9005DC205 /* FactModel.swift */,
+				136327D62C59C1B300C7ED2E /* PhotoEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,7 +153,8 @@
 		136007902C5241AB0072CD1A /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				136007912C5241D30072CD1A /* MyProvider.swift */,
+				136007912C5241D30072CD1A /* SimpleProvider.swift */,
+				136327DA2C59C2C600C7ED2E /* PhotoProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -151,8 +164,34 @@
 			children = (
 				136007952C5242280072CD1A /* SimpleEntry.swift */,
 				136007982C5242FE0072CD1A /* SimpleEntryView.swift */,
+				136327DD2C59C31000C7ED2E /* PhotoEntry.swift */,
+				136327DF2C59C31B00C7ED2E /* PhotoEntryView.swift */,
 			);
 			path = Entry;
+			sourceTree = "<group>";
+		};
+		136327D32C59C0C500C7ED2E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				136327D12C59C0C100C7ED2E /* ImageCache.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		136327D42C59C18500C7ED2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		136327D52C59C19100C7ED2E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				136327D32C59C0C500C7ED2E /* Util */,
+				13E2E1662C5885CE00B79101 /* Extension */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		13DC14CB2C4814CF00066874 = {
@@ -179,7 +218,8 @@
 			children = (
 				13DC14E52C4814F300066874 /* App */,
 				13DC14E72C48150D00066874 /* View */,
-				13E2E1662C5885CE00B79101 /* Extension */,
+				136327D42C59C18500C7ED2E /* Model */,
+				136327D52C59C19100C7ED2E /* Common */,
 				13DC14E62C4814FA00066874 /* Resources */,
 			);
 			path = Practice_Widget;
@@ -340,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136327D22C59C0C100C7ED2E /* ImageCache.swift in Sources */,
 				13E2E16A2C58868A00B79101 /* String+Extension.swift in Sources */,
 				13E2E1682C5885EC00B79101 /* EnvironmentValues+Extension.swift in Sources */,
 				13DC14DA2C4814CF00066874 /* ContentView.swift in Sources */,
@@ -351,12 +392,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136327D82C59C1D300C7ED2E /* ImageCache.swift in Sources */,
 				132C2B272C57DBF7005DC205 /* FactModel.swift in Sources */,
 				13E2E16B2C5886AF00B79101 /* String+Extension.swift in Sources */,
+				136327DC2C59C2F500C7ED2E /* PhotoProvider.swift in Sources */,
 				136007972C52422B0072CD1A /* SimpleEntry.swift in Sources */,
+				136327D92C59C1DB00C7ED2E /* PhotoEntity.swift in Sources */,
+				136327E12C59C35F00C7ED2E /* PhotoEntryView.swift in Sources */,
 				1360079A2C5243110072CD1A /* SimpleEntryView.swift in Sources */,
 				13DC14F62C48160F00066874 /* MyWidgetLiveActivity.swift in Sources */,
-				136007932C5242010072CD1A /* MyProvider.swift in Sources */,
+				136327E22C59C3AC00C7ED2E /* PhotoEntry.swift in Sources */,
+				136007932C5242010072CD1A /* SimpleProvider.swift in Sources */,
 				13583B6E2C490827001D071E /* Configuration.swift in Sources */,
 				13DC14F42C48160F00066874 /* MyWidgetBundle.swift in Sources */,
 				13DC14F82C48160F00066874 /* MyWidget.swift in Sources */,

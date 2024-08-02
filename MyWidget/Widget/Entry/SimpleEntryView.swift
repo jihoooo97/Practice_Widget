@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SimpleEntryView : View {
-    var entry: Provider.Entry
+    var entry: SimpleProvider.Entry
 
     var body: some View {
         VStack {

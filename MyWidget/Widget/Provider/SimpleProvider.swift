@@ -1,5 +1,5 @@
 //
-//  MyProvider.swift
+//  SimpleProvider.swift
 //  Practice_Widget
 //
 //  Created by 유지호 on 7/25/24.
@@ -7,7 +7,7 @@
 
 import WidgetKit
 
-struct Provider: AppIntentTimelineProvider {
+struct SimpleProvider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), meowFact: "Empty")
     }

@@ -12,14 +12,22 @@ struct MyWidget: Widget {
     let kind: String = "MyWidget"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(
+        StaticConfiguration(
             kind: kind,
-            intent: ConfigurationAppIntent.self,
-            provider: Provider()
+            provider: PhotoProvider()
         ) { entry in
-            SimpleEntryView(entry: entry)
+            PhotoEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
+        .supportedFamilies([.systemSmall])
+        
+//        AppIntentConfiguration(
+//            kind: kind,
+//            intent: ConfigurationAppIntent.self,
+//            provider: Provider()
+//        ) { entry in
+//            SimpleEntryView(entry: entry)
+//        }
     }
 }
 
