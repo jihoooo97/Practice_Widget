@@ -5,23 +5,13 @@
 //  Created by 유지호 on 7/18/24.
 //
 
-import ActivityKit
-import WidgetKit
 import SwiftUI
-
-struct MyWidgetAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var emoji: String
-    }
-
-    // Fixed non-changing properties about your activity go here!
-    var name: String
-}
+import WidgetKit
+import ActivityKit
 
 struct MyWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: MyWidgetAttributes.self) { context in
+        ActivityConfiguration(for: SimpleAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
                 Text("Hello \(context.state.emoji)")
@@ -34,13 +24,16 @@ struct MyWidgetLiveActivity: Widget {
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
+                    Text("왼쪽")
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
+                    Text("오른쪽")
+                }
+                DynamicIslandExpandedRegion(.center) {
+                    Text("가운데")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
+                    Text("아래 \(context.state.emoji)")
                     // more content
                 }
             } compactLeading: {
@@ -56,25 +49,9 @@ struct MyWidgetLiveActivity: Widget {
     }
 }
 
-extension MyWidgetAttributes {
-    fileprivate static var preview: MyWidgetAttributes {
-        MyWidgetAttributes(name: "World")
-    }
-}
-
-extension MyWidgetAttributes.ContentState {
-    fileprivate static var smiley: MyWidgetAttributes.ContentState {
-        MyWidgetAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: MyWidgetAttributes.ContentState {
-         MyWidgetAttributes.ContentState(emoji: "🤩")
-     }
-}
-
-#Preview("Notification", as: .content, using: MyWidgetAttributes.preview) {
-   MyWidgetLiveActivity()
+#Preview("Notification", as: .content, using: SimpleAttributes.preview) {
+    MyWidgetLiveActivity()
 } contentStates: {
-    MyWidgetAttributes.ContentState.smiley
-    MyWidgetAttributes.ContentState.starEyes
+    SimpleAttributes.ContentState.smiley
+    SimpleAttributes.ContentState.starEyes
 }
